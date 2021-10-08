@@ -1,8 +1,1 @@
 https://dev.azure.com/machinelearning2021/MachineLearning/_sprints/taskboard/MachineLearning%20Team/MachineLearning/Sprint2
-
-test1
-
-this is the test 2
-
-
-
