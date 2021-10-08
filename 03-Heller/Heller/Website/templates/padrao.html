@@ -1,0 +1,80 @@
+<!--
+    Esse site é o site dos valores padrao, que depende do usuario estar logado
+
+-->
+  {% extends "base.html" %} {% block title %}Padrao{% endblock %} {% block content
+  %}
+<html>
+  <head>
+    <title>Standard Values</title>
+    <meta name='viewport' content ='width=devide-width, initial-scale=1.0, maximum-scale=1.0'>
+  </head>
+
+<body>
+
+  <h1 align="center">Standard Values</h1>
+  <h4>Use dots for decimal numbers</h4>
+  <table class='table table-hover'  style='border: 3px solid #ddd;  padding: 8px;'>
+    <thead class="thead-light">
+      <tr align='center'>
+        <th>R1</th>
+        <th>R2</th>
+        <th>R3</th>
+        <th>R4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr align='center'>
+        <th>{{standard[0]}}</th>
+        <th>{{standard[1]}}</th>
+        <th>{{standard[2]}}</th>
+        <th>{{standard[3]}}</th>
+      </tr>
+    </tbody>
+  </table>
+  <form method="POST">
+    <div class="form-group">
+      <label for="email">R1 Value</label>
+      <input
+        type="r1"
+        class="form-control"
+        id="r1"
+        name="r1"
+        placeholder="..."
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">R2 Value</label>
+      <input
+        type="r2"
+        class="form-control"
+        id="r2"
+        name="r2"
+        placeholder="..."
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">R3 Value</label>
+      <input
+        type="r3"
+        class="form-control"
+        id="r3"
+        name="r3"
+        placeholder="..."
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">R2 Value</label>
+      <input
+        type="r4"
+        class="form-control"
+        id="r4"
+        name="r4"
+        placeholder="..."
+      />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+  {% endblock %}
+</html>

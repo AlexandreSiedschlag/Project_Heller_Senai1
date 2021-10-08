@@ -1,0 +1,16 @@
+Sprints: 
+
+1-  a- Toda vez que cria um banco de dados precisa criar as tabelas. OK
+    b- Precisa verificar se ja existe a tabela e criar OK
+    
+
+2-  Impedir o erro na digitacao na tela de padroes
+    Gerar Arquivo TXT - OK
+    
+
+3- Log - Data, Hora, User, compilar informacoes, gerar uma tabela pro usuario.
+
+4- Front,
+        Dinor:  Foto da Peça
+                Desenho da Peça
+                Gifs: Tri, CNC

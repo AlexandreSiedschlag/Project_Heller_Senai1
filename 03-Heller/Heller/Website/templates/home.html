@@ -1,0 +1,99 @@
+<!--
+    Esse site é o site principal, que depende do usuario estar logado
+
+-->
+  {% extends "base.html" %} {% block title %}Standard Values{% endblock %} {% block content
+  %}
+<html>
+  <head>
+    <title>Standard</title>
+    <meta name='viewport' content ='width=devide-width, initial-scale=1.0, maximum-scale=1.0'>
+  </head>
+ 
+<body>
+
+  <h1 align="center">Standard</h1>
+    <table class='table table-hover'  style='border: 3px solid #ddd;  padding: 16px;'>
+      <thead class="thead-light">
+        <tr align='center'>
+          <th>Variable</th>
+          <th>Value</th>
+          <th>Standard Value</th>
+          <th>Correction</th>
+          <th>Validation</th>
+          <th>Old Correction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align='center'>
+          <td>R1:</td>
+          <td>{{medidas[0]}}</td>
+          <td>{{standard[0]}}</td>
+          <td>{{correcoes[0]}}</td>
+          <td>
+            <form id='package_form' action='' method='post'>
+              <button type="submit" class="btn btn-primary" name='botoes1'>Check R1</button>
+            </form>
+          </td>
+          <td>{{correcoes[4]}}</td>
+        </tr>
+        <tr align='center'>
+          <td>R2:</td>
+          <td>{{medidas[1]}}</td>
+          <td>{{standard[1]}}</td>
+          <td>{{correcoes[1]}}</td>
+          <td>
+            <form id='package_form' action='' method='post'>
+              <button type="submit" class="btn btn-primary" name='botoes2'>Check R2</button>
+            </form>
+            <td>{{correcoes[5]}}</td>
+          </td>
+        </tr>
+        <tr align='center'>
+          <td>R3:</td>
+          <td>{{medidas[2]}}</td>
+          <td>{{standard[2]}}</td>
+          <td>{{correcoes[2]}}</td>
+          <td>
+            <form id='package_form' action='' method='post'>
+              <button type="submit" class="btn btn-primary" name='botoes3'>Check R3</button>
+            </form>
+            <td>{{correcoes[6]}}</td>
+          </td>
+        </tr>
+        <tr align='center'>
+          <td>R4:</td>
+          <td>{{medidas[3]}}</td>
+          <td>{{standard[3]}}</td>
+          <td>{{correcoes[3]}}</td>
+          <td>
+            <form id='package_form' action='' method='post'>
+              <button type="submit" class="btn btn-primary" name='botoes4'>Check R4</button>
+            </form>
+            <td>{{correcoes[7]}}</td>
+          </td>
+        </tr>
+        <!--Botao validar tudo-->
+        <tr align='center'>
+          <td colspan='6'>
+            <form id='package_form' action='' method='post'>
+              <div class='panel-body'>
+                <button type="submit" class="btn btn-primary" name='botoesAll'>Check All</button>
+              </div>
+            </form>
+          </td>
+        </tr>
+        <!--Botao validar tudo-->
+        <tr align='center'>
+        <br>
+          <td colspan='6'>
+            <form id='package_form' action='' method='post'>
+              <button type="submit" class="btn btn-warning" name='botoesler'>Read TXT File</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  {% endblock %}
+</html>

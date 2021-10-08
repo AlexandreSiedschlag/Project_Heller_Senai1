@@ -1,0 +1,17 @@
+#--------------------------Essa função ta pronta
+# #Funcao de inserir valores nas tabelas
+# #name = 
+# def insert(name, valor ):
+#     c.execute("""INSERT INTO TabelaValores(name, valor) VALUES('"""+name+"""', """+str(valor)+""")""")
+#     conn.commit()
+# #--------------------------Essa função ta pronta
+
+# #--------------------------Essa função ta pronta
+# def update(valor1, nome1):
+#     c.execute("""UPDATE TabelaValores SET valor ='"""+valor1+"""' WHERE name = '"""+nome1+"""';""")
+#     conn.commit()
+# #--------------------------Essa função ta pronta
+# def delete(data):
+#     c.execute("""DELETE * FROM TabelaValores""")
+#     conn.commit()
+# #--------------------------Essa função ta pronta

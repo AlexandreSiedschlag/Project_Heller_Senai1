@@ -1,0 +1,80 @@
+    .validar{
+        display: inline-flex;
+        height: 50px;
+        padding: 0;
+        background: #33cc33;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        overflow: hidden;
+        font-family:'Quicksand', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin: 0;
+    }
+    .validar:hover{
+        background: #008168;
+    }
+    .validar.active{
+        background: #006e58;
+    }
+    .validar__text,
+    .validar__icon{
+        display: inline-flex;
+        align-items: center;
+        padding: 0 24px;
+        color: #fff;
+        height: 100%;
+    }
+    .validar__icon{
+        font-size:1.5em;
+        background: rgba(0, 0, 0, 0.08);
+    }
+    .validar2{
+    display: inline-flex;
+    height: 70px;
+    padding: 0;
+    background: #33cc33;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family:'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    }
+    .validar2:hover{
+    background: #008168;
+    }
+    .validar2.active{
+        background: #006e58;
+    }
+    .validar2__text,
+    .validar2__icon{
+        display: inline-flex;
+        align-items: center;
+        padding: 0 250px;
+        color: #fff;
+        height: 100%;
+    }
+    .validar2__icon{
+        font-size:2.5em;
+        background: rgba(0, 0, 0, 0.08);
+    }
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }

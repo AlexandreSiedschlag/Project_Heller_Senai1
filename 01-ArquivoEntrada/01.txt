@@ -1,0 +1,16 @@
+Diametro                      AV=    11      NV=     21.000    -----*-----
+Circulo 1                     DV=      0.000 UT=      0.100               
+(1)                           LT=     -0.100                   
+
+Posição X                     AV=     20     NV=     26.000    -----*-----
+Circulo 1                     DV=      0.000 UT=      0.100               
+(1)                           LT=     -0.100                   
+
+Posição Y                     AV=     30     NV=   22.000    -----*-----
+Circulo 1                     DV=      0.000 UT=      0.100               
+(1)                           LT=     -0.100                   
+
+Posição Z                     AV=     40     NV=     10.000    -----*-----
+Circulo 1                     DV=      0.000 UT=      0.100               
+(1)                           LT=     -0.100                   
+

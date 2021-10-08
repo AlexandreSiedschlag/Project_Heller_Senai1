@@ -1,0 +1,120 @@
+Automação de CNC e computador(totem) para SENAI
+1- O que?
+Workflow:   CNC usina->
+            Tridimensional mede->
+            Totem pega o arquivo com as medidas e faz as correções necessárias -> 
+            O programa joga essas informações para o banco de dados e gera um arquivo de LOG com data, hora, ID da peça.
+
+2- O cliente precisa de uma interface online(site/plataforma), mas, inicialmente pode ser local
+
+3- Como é dado o layout de hardware atualmente?
+3D->totem1->totem2-CNC
+
+4- Já existe um site. Será utilizado? Não, vou criar novo pois nao foi encontrado o site antigo.
+ 
+5- Como?
+SITE: tem que pedir a validação(confirmação) do usuário para cada peça, e também colocar um botao para validar tudo de uma vez
+para ver se realmente está correto o valor. 
+Então o usuário vai ter que apertar OK em todas as medidas da peça. Tem que ser Online. 
+Tem que ser expansível(mais maquinas). 
+No momento o cliente precisa que rode o básico.(validação pelo site e geração da correção).
+ 
+6- Não tem linguagem especifica(Python/HTML/CSS/JS será aplicado então).
+
+7- Quando?
+Prazo máximo de 5 meses, a partir de 13/09/2021.
+
+8- Estrutura Dev:
+Code: Python/HTML/CSS/JS
+Utilities: Flask, Flask-SQLAlchemy, Flask-login
+
+9- Arquivo txt precisa ser comparado com o arquivo padrao
+calculo matematico dentro do programa
+
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+POST = Usuario mandando informaçoes
+GET = Usuario pedindo informações
+
+Primeiro de tudo, Installe:
+pip install Flask
+pip install SQLite3
+pip install SQLAlchemy
+pip install Flask-login
+pip install Black depois...(engrenagem na esquerda..settings..digite: python format provider...selecione black)
+
+
+-------------------------------------------------------------------------------------------
+Python Convention Below:
+VARIAVEL_CONSTANTE = tudo maiusculo
+variavel_Nao_Constante = primeiro minusculo e o resto maiusculo
+class = BaseClass = Primeira letra maiuscula de cada palavra
+-------------------------------------------------------------------------------------------
+Object explanation:
+objetos sao as variaveis
+
+-------------------------------------------------------------------------------------------
+Class explanation:
+def hello():
+    print('hello')<---esse hello é da classe String
+    x=1
+    print(x)<---esse x é da classe Inteiro
+    print(hello)<--- esse hello está sem aspas entao é da classe function
+
+-------------------------------------------------------------------------------------------
+Methods explanation:
+Method é a função que vai dentro do Class
+class Pessoa:
+    __init__(self): é do próprio python.
+        def __init__(self, nome, idade, comendo = False, falando=False)
+        self.nome(<-esse parametro da esquerda nome nao tem nada haver com esse da direita->) = nome
+        self.idade = idade
+        self.comendo = comendo
+        self.falando = falando
+
+
+p1 = Pessoa(aqui dentro voce colocaria o 'p1' mas como a funcao acima ja tem o 'self' nao precisa)
+entao ficaria assim:
+p1 = Pessoa(nome, idade)<- aqui nao precisa colocar mais pq os outros 2 parametros ja tem valores atribuidos.
+            /\      /\
+          Alexandre,  29
+se eu for buscar a idade é só digitar assim:
+x = p1.idade
+
+
+Methods sao aqueles pontos que vao depois do objeto, veja:
+string = 'hello'
+print(string.upper())<--Esse '.upper' é o method
+
+Atributes explanation:
+Atributos das variaveis de classe/instancia sao:p1 = Pessoa()
+                                                p1.nome = 'luiz'
+                                                Esse .nome é o atributo da variavel p1
+                                                Esse p1 vem da classe Pessoas
+
+-------------------------------------------------------------------------------------------
+Aqui vamos abordar o programa.
+
+Flask = Extensão que permite o programador fazer uma pequena melhora no site como: Flash e Login
+
+SQLAlchemy = Banco de dados
+SQLite = Banco de dados
+
+Main = Vai somente chamar as funções dentro dos arquivos
+
+Gerenciar_DataBase = Arquivo que contem as funcoes para SQLITE
+
+Call_Info_3D = Arquivo para buscar as informações no PC da tridimencional
+
+
+
+
+
+
+
+
+
+
